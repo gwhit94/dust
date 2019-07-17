@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dust</title>
+    <style>
+        /* Clear side margins */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        /* Top Bar Styling */
+        .topBar{
+            height: 50px;
+            width: 100%;
+            background-image: linear-gradient(to right, #202030, #404050);
+        }
+        /* Navigation Pane Styling */
+        .navPane{
+            height: 100vh;
+            width: 15%;
+            background-image: linear-gradient(#202030, #404050);
+            color: #ffffff;
+            font-size: 16px;
+        }
+        .navList{
+            margin: 25px;
+            list-style-type: square;
+        }
+        .navLink{
+            padding: 20px;
+        }
+        .projectLink{
+            display: none;
+            overflow: hidden;
+        }
+        /* Work Space styling */
+        .workSpace{
+            height: 100vh;
+            width: 85%;
+            background-image: linear-gradient(140deg, #303040, #505060);
+        }
+        /* Helper Classes */
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .clearBoth{
+            clear: both;
+        }
+        .textCenter{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="topBar clearBoth">
+        <!-- Current Page indicator  -->
+    </div>
+
+    <!-- Left Nav -->
+    <div class="navPane left">
+        <ul class="navList ">
+            <!-- Main Page link -->
+            <li class="navLink">
+                Main
+            </li>
+            <!-- Projects expandable list -->
+            <ul class="navLink projectsDrop"> Projects
+                <li class="projectLink">Project A</li>
+                <li class="projectLink">Project B</li>
+                <li class="projectLink">Project C</li>   
+            </ul>
+            <!-- About Info link -->
+            <li class="navLink">
+                About
+            </li>
+        </ul>
+    </div>
+
+    <!-- Right Article/Project space -->
+    <div class="workSpace right">
+
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("projectsDrop");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = document.getElementsByClassName("projectLink");
+            console.log(content);
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        } 
+    </script>
+</body>
+</html>
