@@ -1,0 +1,50 @@
+/* Clear side margins */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+}
+/* Top Bar Styling */
+.topBar{
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(to right, #202030, #404050);
+}
+/* Navigation Pane Styling */
+.navPane{
+    height: 100vh;
+    width: 15%;
+    background-image: linear-gradient(#202030, #404050);
+    color: #ffffff;
+    font-size: 16px;
+}
+.navList{
+    margin: 25px;
+    list-style-type: square;
+}
+.navLink{
+    padding: 20px;
+}
+.projectLink{
+    display: none;
+    /* overflow: hidden; */
+}
+/* Work Space styling */
+.workSpace{
+    height: 100vh;
+    width: 85%;
+    background-image: linear-gradient(140deg, #303040, #505060);
+}
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearBoth{
+    clear: both;
+}
+.textCenter{
+    text-align: center;
+}
