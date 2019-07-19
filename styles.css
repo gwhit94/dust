@@ -68,6 +68,7 @@
     height: 100vh;
     width: calc(100vw - 200px);
     background-image: linear-gradient(140deg, #303040, #505060);
+    display: flex;
 }
 /* Helper Classes */
 .left {
