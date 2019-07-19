@@ -14,13 +14,9 @@
 }
 #siteTitle{
     flex-direction: row;
-    flex-grow: 0;
     padding-left: 15px;
     margin: 15px;
     font-weight: bold;
-    /* position: relative;
-    left: 75px;
-    line-height: 50px; */
 }
 #siteTitle:hover{
     cursor: pointer;
@@ -42,6 +38,8 @@
     width: 200px;
     background-image: linear-gradient(#202030, #404050);
     font-size: 14px;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .navList{
     margin: 25px;
@@ -50,6 +48,7 @@
 .navLink{
     padding: 20px;
 }
+/* projects dropdown/links styling */
 .projectsDrop{
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
@@ -68,18 +67,23 @@
     height: 100vh;
     width: calc(100vw - 200px);
     background-image: linear-gradient(140deg, #303040, #505060);
-    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    /* Sets grid for within workspace */
+    display: grid;
+    grid-template-columns: 5% auto auto auto 5%;
+    grid-template-rows: 5% auto auto auto 5%;
 }
-/* Helper Classes */
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
+
 .clearBoth{
     clear: both;
 }
 .textCenter{
     text-align: center;
+}
+/* sets grid for navpane/workspace */
+.container{
+    display: grid;
+    grid-template-columns: 200px auto;
 }
