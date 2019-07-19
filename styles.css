@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    color: #ffffff;
 }
 /* Top Bar Styling */
 .topBar{
@@ -10,13 +11,17 @@
     width: 100%;
     background-image: linear-gradient(to right, #202030, #404050);
 }
+#siteTitle{
+    position: relative;
+    left: 75px;
+    line-height: 50px;
+}
 /* Navigation Pane Styling */
 .navPane{
     height: 100vh;
     width: 15%;
     background-image: linear-gradient(#202030, #404050);
-    color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
 }
 .navList{
     margin: 25px;
@@ -25,8 +30,17 @@
 .navLink{
     padding: 20px;
 }
+.projectsDrop{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+.projectsDrop:hover{
+    cursor: pointer;
+}
 .projectLink{
+    margin-top: 20px;
     display: none;
+    font-size: 12px;
     /* overflow: hidden; */
 }
 /* Work Space styling */

@@ -1,4 +1,4 @@
-// Collapsible button
+// Projects Collapsible button
 var coll = document.getElementsByClassName("projectsDrop");
 var i;
 for (i = 0; i < coll.length; i++) {
