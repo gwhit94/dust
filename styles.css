@@ -7,19 +7,39 @@
 }
 /* Top Bar Styling */
 .topBar{
+    display: flex;
     height: 50px;
     width: 100%;
     background-image: linear-gradient(to right, #202030, #404050);
 }
 #siteTitle{
-    position: relative;
+    flex-direction: row;
+    flex-grow: 0;
+    padding-left: 15px;
+    margin: 15px;
+    font-weight: bold;
+    /* position: relative;
     left: 75px;
-    line-height: 50px;
+    line-height: 50px; */
+}
+#siteTitle:hover{
+    cursor: pointer;
+}
+#indicator{
+    margin-top: 15px;
+    font-size: 12px;
+}
+/* Link Styling */
+.linkNoLine{
+    text-decoration: none;
+}
+.linkNoLine:hover{
+    cursor: pointer;
 }
 /* Navigation Pane Styling */
 .navPane{
     height: 100vh;
-    width: 15%;
+    width: 200px;
     background-image: linear-gradient(#202030, #404050);
     font-size: 14px;
 }
@@ -35,7 +55,7 @@
     border-bottom: 1px solid #000000;
 }
 .projectsDrop:hover{
-    cursor: pointer;
+    cursor: crosshair;
 }
 .projectLink{
     margin-top: 20px;
@@ -46,7 +66,7 @@
 /* Work Space styling */
 .workSpace{
     height: 100vh;
-    width: 85%;
+    width: calc(100vw - 200px);
     background-image: linear-gradient(140deg, #303040, #505060);
 }
 /* Helper Classes */
