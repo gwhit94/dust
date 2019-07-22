@@ -87,3 +87,18 @@
     display: grid;
     grid-template-columns: 200px auto;
 }
+/* forSale page styling */
+.forSale{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    border: 2px solid black;
+}
+#textBox {
+    height: 300px;
+    width: 90%;
+}
+#submit {
+    color: black;
+}
